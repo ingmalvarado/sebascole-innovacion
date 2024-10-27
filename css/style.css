@@ -61,6 +61,15 @@ display: none;
 
 }
 
+.logo-footer{
+    border-radius: 30%; 
+}
+
+footer p, footer img{
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .item {
     border-radius: 1em;
     height: 25em;
