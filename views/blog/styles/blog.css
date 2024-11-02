@@ -1,0 +1,81 @@
+h1 {
+    color: #fefefe;
+}
+
+
+h1 b {
+    color: #9900ff;
+}
+
+.contenido-blog {
+    background-color: #fefefe;
+    border-radius: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+}
+
+.contenido {
+    margin-top: 1.5rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2, strong{
+    color: #3e4095;
+}
+
+ul li {
+    margin-left: 1em;
+    text-decoration: none;
+}
+
+#about {
+    margin-top: 10%;
+}
+
+p a {
+    font-size: 12px;
+}
+
+.card {
+    margin-top: .5em;
+}
+
+/*paginacion*/
+
+.listPage{
+    padding:10px;
+    text-align: center;
+    list-style: none;
+}
+.listPage li{
+    background-color: #dfdfdfbd;
+    color: #0e0e0e;
+    padding:.8em;
+    width: 3em;
+    height: 3em;
+    display: inline-block;
+    margin:0 10px;
+    cursor: pointer;
+    border-radius: 3em;
+}
+.listPage .active{
+    background-color: #9900ff;
+    color:#fefefe;
+}
+
+.blog {
+    margin-bottom: -17em;
+}
+
+/* Centrar imágenes y establecer un tamaño estándar */
+.img-center {
+    display: block; /* Hace que la imagen se trate como un bloque */
+    margin-left: auto; /* Alinea la imagen a la izquierda */
+    margin-right: auto; /* Alinea la imagen a la derecha */
+    width: 300px; /* Establece un ancho estándar */
+    height: auto; /* Mantiene la relación de aspecto */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+}

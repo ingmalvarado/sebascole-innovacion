@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+     <head>   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Enlaza el CSS de Owl Carousel -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha384-puCMPIAyWxU0ou8i3C3vP2eC+ZaKm4ywTrO5OT+WKoZisIsNfULpL6ljqC9z3VyQ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha384-6wjlmjHQ+uLT9py6dn7N9EfGoKzBxoiFUzf/kBzkxYPYdr6HbJvBvcoyIMBHZmGk" crossorigin="anonymous">
+
+        <!-- Enlaza jQuery (necesario para Owl Carousel) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+5hb7Z9E5l5Dh5Z3owFPdT9coy6y0IQhsUM1VpO" crossorigin="anonymous"></script>
+
+        <!-- Enlaza el JavaScript de Owl Carousel -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha384-mn5k8GcIjP3f2so5PGic4eGTmMgEP9jlQs3zF/ltvb6RYtdLOXvUEpBTVlg/IksZ" crossorigin="anonymous"></script>
+        
+        <meta charset="UTF-8">        
+
+        <link rel="icon" href="img/favicon.jpg" type="image/png">
+            <title>Innovación Tecnológica y Productiva</title>
+            <!-- Google Web Fonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+            <!-- Icon Font Stylesheet -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+            <!-- Libraries Stylesheet -->
+            <link href="lib/animate/animate.min.css" rel="stylesheet">
+            <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+            <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+            <!-- Customized Bootstrap Stylesheet -->
+            <link href="css/bootstrap.min.css" rel="stylesheet">
+
+            <!-- Template Stylesheet -->
+            <link href="css/style.css" rel="stylesheet">
+            <link href="views/blog/styles/blog.css" rel="stylesheet">
+    </head>
+
+    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-container">
+                <div class="cir-spinner"></div>
+                <div class="cir-spinner"></div>
+                <div class="cir-spinner"></div>
+            </div>
+            </div>
+            <!-- Spinner End -->
+
+        <!-- Div independiente para los círculos -->
+        <div class="custom-background"></div>
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+                <a href="index.html" class="nav-item nav-link active text-secondary" title="home - inicio">
+                    <h4 class="primary"><img src="img/favicon.jpg" style="height: 1.5em; width: auto;"><b> Innovación Tecnológica y Productiva</b></h4>
+                </a>
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link" title="Contacto">Inicio</a>
+                    <b class="nav-item nav-link">|</b>
+                    <a href="blog.html" class="nav-item nav-link" title="Contacto">Blog</a>                       
+                </div>
+        </nav>
+
+        <!-- Header Start -->
+        <header>
+            <div class="container-fluid my-6 mt-0 py-5" id="home">
+                <div class="container">
+                    <div class="g-5 align-items-center text-center">
+                        <br><br><br>
+                        <h1 class="display-3 mb-3 text-primary text-bg">Contenido para <b class="hover-blue">estudiar</b></h1>
+                        <h2 class="typed-text-output d-inline"></h2>
+                        <div class="typed-text d-none text-bg">
+                           Innovación Tecnológica y Productiva, Tecnología disruptiva, Entender la Informática, Lo que debes saber de Computación
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header End -->
+        
+       <!--search start-->
+        <section>
+            <div id="fondo" style="width: 95%; margin-left: auto; margin-right: auto; border-radius: 1.5em;">
+                <p class="text-center text-white overlay-text">
+                    Navega por esta página para encontrar artículos sobre innovación tecnológica y productiva. <br>
+                    También puedes buscar directamente lo que necesites.
+                </p>
+                <div class="input-group overlay-text" style="width: 50%; margin-right: auto; margin-left: auto;" id="buscar">  
+                    <input type="text" class="form-control" name="buscador" id="buscador" placeholder="Busca aquí">
+                    <span class="input-group-text bi bi-search-heart"></span>
+                </div>
+            </div>
+        </section>
+        <!--search end-->
+
+        <!--list blog start-->
+        <section>
+            <div class="list">
+                <div id="blogs">
+                    <div class="container py-6">
+
+                    <!--
+                        <div class="blog">
+                            <div class="item">  
+                                    <div class="card border-primary mb-3 d-inline-flex" style="width: 100%; margin-left: .5em; margin-right: .5em;">
+                                        <a href="">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <small class="card-text">
+                                            
+                                            
+                                        </small>
+                                        </div>
+                                    </a>
+                                    </div>
+                            </div>
+                        </div>
+                    -->
+
+                        <div class="blog">
+                            <div class="item">  
+                                <div class="card border-primary d-inline-flex" style="width: 100%; margin-left: .5em; margin-right: .5em;">
+                                    <a href="views/blog/hardware-software.html">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Hardware y Software: El Cuerpo y la Mente de una Computadora</h5>
+                                    <small class="card-text">
+                                        Imagina que tu computadora es como un ser humano. En este sentido, el hardware sería el "cuerpo" de la computadora, 
+                                        mientras que el software representaría la "mente"...
+                                    </small>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--
+
+                        <div class="blog">
+                            <div class="item"> 
+                                <div class="card border-primary d-inline-flex" style="width: 100%; margin-left: .5em; margin-right: .5em;">
+                                    <a href="">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Título</h5>
+                                    <small class="card-text">
+                                       texto
+                                    </small>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                        </div>-->
+
+
+                    <!--Paginacion-->
+                    <ul class="listPage"></ul>
+                    <!--Fin paginacion-->
+                    </div>
+                </div>
+            </div><!--list-->          
+        </section>
+        <!--list blog end-->
+
+
+        <!-- footer Start -->
+        <footer>
+            <div class="container text-white" id="fondo">
+                    <div class="container overlay-text">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <p><b class="text-white">Docente: </b>Maria G. Alvarado. (Ingeniero en Informática)</p>
+                                <p><b class="text-white">Área: </b>Innovación Tecnológica y Productiva</p>
+                                <p>C.E.C. "Sebastián Francisco de Miranda Rodríguez"</p>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <img src="img/favicon.jpg" 
+                                style="height: 10em; width: auto;"
+                                class="logo-footer"
+                                alt="Logo de Complejo Educativo Colegio Sebastián Francisco de Miranda">
+                            </div>
+    
+                        </div>
+    
+    
+    
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution 
+                        link/backlink. If you'd like to use the template without the footer author’s credit 
+                        link/attribution link/backlink, you can purchase the Credit Removal License from 
+                        "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        
+                        <small style="font-size: 12px; color: #505050; margin-top: .5em;">
+                            Designed By <a  href="https://htmlcodex.com" title="HTML Codex">HTML Codex </a>
+                            Distributed By: <a href="https://themewagon.com" title="ThemeWagon">ThemeWagon</a>
+                        </small>
+                    </div><!--container-->
+                </div><!--container-fluid-->
+            </footer>
+            <!-- footer End -->
+        <!-- Back to Top -->
+        <a href="#" id="a-top" class="btn btn-lg btn-primary btn-lg-square back-to-top" title="top"><b></b><i class="bi bi-arrow-up"></i></b></a>
+
+        <script> //Script para fecha actual
+            var today = new Date();
+            var year = today.getFullYear();
+            document.getElementById('date').innerHTML = 'Ing. Maria G. Alvarado. &nbsp;&nbsp; ' + year;
+        </script>
+        
+
+        
+        <!-- jQuery y Owl Carousel JS (siendo jQuery 3.6.0) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/typed/typed.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>
