@@ -92,6 +92,10 @@ p b,  h2 b, h4, h5 b, ul li b {
     color: #3e4095;
 }
 
+.hover-click {
+    cursor: pointer; /* Cambia el cursor a una mano */
+}
+
 .hover-blue{
      transition: .5s;
 }
