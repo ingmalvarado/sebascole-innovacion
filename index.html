@@ -37,6 +37,14 @@
             <link href="css/style.css" rel="stylesheet">
     </head>
 
+    <style>
+        .portfolio-img {
+            justify-content: center;
+            aspect-ratio: 1 / .5;  
+            display: flex;
+        }
+    </style>
+
     <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -62,8 +70,7 @@
                 </a>
                 <div class="navbar-nav ms-auto py-0">
                     <a href="#about" class="nav-item nav-link" title="Contacto">Acerca de</a>
-                    <a href="#norms" class="nav-item nav-link" title="Contacto">Normativas</a>
-                    <a href="#books" class="nav-item nav-link" title="Contacto">Libros Sugeridos</a> 
+                    <a href="#project" class="nav-item nav-link" title="Proyectos">Proyectos</a>
                     <b class="nav-item nav-link">|</b>  
                     <a href="blog.html" class="nav-item nav-link" title="Contacto">Blog</a>                       
                 </div>
@@ -77,7 +84,7 @@
                     <div class="row g-5 align-items-center">
                         <div class="col-md-5 py-6 pb-0 pt-lg-0">
                         <br><br><br>
-                        <h6 class="text-bg">Complejo Educativo Colegio <br> Sebastián Francisco de Miranda</h6>
+                        <h6 class="text-bg">Complejo Educativo Colegio <br> Sebastián Francisco de Miranda Rodríguez</h6>
                             <h3 class="display-3 mb-3 text-primary">
                                 <b class="hover-blue text-bg">Innovación Tecnológica y Productiva</b>
                             </h3>
@@ -99,29 +106,25 @@
             </div>
         </header>
         <!-- Header End -->
-
-
-
-
-        <!--About Start -->
-        <section>
+<!--About Start -->
+        <section class="py-5">
             <div id="about">
                 <div id="fondo" class="container">
                     <div class="col-lg-12 wow fadeInUp overlay-text" data-wow-delay="0.5s">
                         <p> &nbsp;&nbsp;&nbsp;
-                            La innovación tecnológica se refiere a la introducción y aplicación de nuevas tecnologías para 
-                            mejorar procesos, productos o servicios. Impulsa la competitividad al optimizar recursos y 
-                            aumentar la eficiencia en distintos sectores.
+                           En esta área aprendemos a usar la tecnología de manera útil, segura y creativa. Usamos computadoras, 
+                           programas y distintas herramientas digitales que nos ayudan a estudiar, trabajar en equipo y resolver 
+                           problemas.
                         </p>
                         <p> &nbsp;&nbsp;&nbsp;
-                            Por otro lado, la innovación productiva busca transformar y optimizar los procesos de producción, 
-                            mejorando tanto la calidad como la cantidad de los productos. Esto implica el uso de nuevas técnicas, 
-                            equipos y metodologías para maximizar el rendimiento.
+                            Realizamos actividades prácticas para aprender a usar diferentes programas, organizarnos mejor, crear 
+                            contenidos y entender cómo funciona la tecnología que usamos todos los días.
                         </p>
                         <p> &nbsp;&nbsp;&nbsp;
-                            Ambas formas de innovación son clave para el desarrollo económico y social, ya que permiten a las 
-                            empresas adaptarse a los cambios del mercado. Contribuyen a generar valor agregado y a potenciar el 
-                            crecimiento sostenible.
+                            Porque la tecnología está presente en casi todo lo que hacemos. Saber usarla bien nos ayuda en la escuela, 
+                            en casa y en el futuro, cuando tengamos que trabajar o seguir estudiando.
+
+
                         </p>  
                     </div>
                 </div>
@@ -130,131 +133,168 @@
         <!--About End -->
 
 
+         <!-- Portfolio Start -->
+        <section>
+            <div class="container-xxl card py-6 pt-5" id="project">
+                <div class="container" id="fondonegro" style="width: 95%; margin-left: auto; margin-right: auto; border-radius: 1.5em;">
+                    <div id="project" class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-6">
+                            <h2 class="display-5 mb-5"><b>Proyectos de Marca</b> </h2>
+                        </div>
+                        <div class="col-lg-6 text-lg-end">
+                            <ul class="list-inline mx-n3 mb-0 text-primary" id="portfolio-flters">
+                                <li class="mx-3 active text-dark" data-filter="*">Todo</li>
+                                <li class="mx-3 text-dark" data-filter=".primer">1er año</li>
+                                <li class="mx-3 text-dark" data-filter=".segun">2do año</li>
+                            </ul>
+                        </div>
+                    </div><!--selector-->
+                    <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 portfolio-item primer">
+                            <div class="portfolio-img rounded overflow-hidden">
+                                <img class="img-fluid" src="img/representacion_visual_1/acelga.png">
+                                <div class="portfolio-btn">
+                                    <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="img/representacion_visual_1/acelga.png" data-lightbox="portfolio" title="Marca de Vinagre de Acelga"><i class="bi bi-eye"></i></a>
+                                </div>
+                            </div>
+                                     <b style="font-size: .9em;">
+                                         <a href="img/representacion_visual_1/acelga.rar" 
+                                        download="acelga.rar">
+                                        Descarga el archivo editable (en vectores) aquí
+                                        </a>
+                                    </b>
+                        </div><!--proyecto-1-->
+                        <div class="col-lg-3 col-md-6 col-sm-12 portfolio-item primer">
+                            <div class="portfolio-img rounded overflow-hidden">
+                                <img class="img-fluid" src="" alt="Marca de Vinagre de Arroz en desarrollo: pronto disponible para su descarga.">
+                                <div class="portfolio-btn">
+                                    <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="" data-lightbox="portfolio" title="Marca de Vinagre de Parchita"><i class="bi bi-eye"></i></a>
+                                </div>
+                            </div>
+                                   <b style="font-size: .9em;">
+                                         <a href="" 
+                                        download="">
+                                        <!--  Descarga el archivo editable (en vectores) aquí-->
+                                        </a>
+                                    </b>
+                        </div><!--proyecto-2-->
+
+                      <div class="col-lg-3 col-md-6 col-sm-12 portfolio-item primer">
+                            <div class="portfolio-img rounded overflow-hidden">
+                                <img class="img-fluid" src="img/representacion_visual_1/durazno.png">
+                                <div class="portfolio-btn">
+                                    <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="img/representacion_visual_1/durazno.png" data-lightbox="portfolio" title="Marca de Vinagre de Durazno"><i class="bi bi-eye"></i></a>
+                                </div>
+                            </div>
+                                    <b style="font-size: .9em;">
+                                         <a href="img/representacion_visual_1/durazno.rar" 
+                                        download="durazno.rar">
+                                        Descarga el archivo editable (en vectores) aquí
+                                        </a>
+                                    </b>
+                        </div><!--proyecto-3-->
+                        
+                         <div class="col-lg-3 col-md-6 col-sm-12 portfolio-item primer">
+                            <div class="portfolio-img rounded overflow-hidden">
+                                <img class="img-fluid" src="img/representacion_visual_1/parchita.png">
+                                <div class="portfolio-btn">
+                                    <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="img/representacion_visual_1/parchita.png" data-lightbox="portfolio" title="Marca de Vinagre de Parchita"><i class="bi bi-eye"></i></a>
+                                </div>
+                            </div>
+                                     <b style="font-size: .9em;">
+                                         <a href="img/representacion_visual_1/parchita.rar" 
+                                        download="parchita.rar">
+                                        Descarga el archivo editable (en vectores) aquí
+                                        </a>
+                                    </b>
+                        </div><!--proyecto-4-->
+                           <div class="col-lg-3 col-md-6 col-sm-12 portfolio-item primer">
+                            <div class="portfolio-img rounded overflow-hidden">
+                                <img class="img-fluid" src="" alt="Marca de Vinagre de Zanahoria en desarrollo: pronto disponible para su descarga.">
+                                <div class="portfolio-btn">
+                                    <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="" data-lightbox="portfolio" title="Marca de Vinagre de Parchita"><i class="bi bi-eye"></i></a>
+                                </div>
+                            </div>
+                                   <b style="font-size: .9em;">
+                                         <a href="" 
+                                        download="">
+                                        <!--  Descarga el archivo editable (en vectores) aquí-->
+                                        </a>
+                                    </b>
+                        </div><!--proyecto-5-->
+    
+                        <div class="col-lg-3 col-md-6 col-sm-12 portfolio-item segun">
+                            <div class="portfolio-img rounded overflow-hidden">
+                                <img class="img-fluid" src="img/representacion_visual_2/remolacha.png">
+                                <div class="portfolio-btn">
+                                    <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="img/representacion_visual_2/remolacha.png" data-lightbox="portfolio" title="Marca de Vinagre de Parchita"><i class="bi bi-eye"></i></a>
+                                </div>
+                            </div>
+                                     <b style="font-size: .9em;">
+                                         <a href="img/representacion_visual_2/remolacha.rar" 
+                                        download="remolacha.rar">
+                                        Descarga el archivo editable (en vectores) aquí
+                                        </a>
+                                    </b>
+                        </div><!--proyecto-6-->  
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 portfolio-item segun">
+                            <div class="portfolio-img rounded overflow-hidden">
+                                <img class="img-fluid" src="img/representacion_visual_2/tomate.png">
+                                <div class="portfolio-btn">
+                                    <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="img/representacion_visual_2/tomate.png" data-lightbox="portfolio" title="Marca de Vinagre de Parchita"><i class="bi bi-eye"></i></a>
+                                </div>
+                            </div>
+                                     <b style="font-size: .9em;">
+                                         <a href="img/representacion_visual_2/tomate.rar" 
+                                        download="tomate.rar">
+                                        Descarga el archivo editable (en vectores) aquí
+                                        </a>
+                                    </b>
+                        </div><!--proyecto-7-->  
+
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 portfolio-item segun">
+                            <div class="portfolio-img rounded overflow-hidden">
+                                <img class="img-fluid" src="img/representacion_visual_2/zanahoria.png">
+                                <div class="portfolio-btn">
+                                    <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="img/representacion_visual_2/zanahoria.png" data-lightbox="portfolio" title="Marca de Vinagre de Parchita"><i class="bi bi-eye"></i></a>
+                                </div>
+                            </div>
+                                     <b style="font-size: .9em;">
+                                         <a href="img/representacion_visual_2/zanahoria.rar" 
+                                        download="zanahoria.rar">
+                                        Descarga el archivo editable (en vectores) aquí
+                                        </a>
+                                    </b>
+                        </div><!--proyecto-8-->                         
+
+                    </div><!--proyectos-->
+                </div><!--container-->
+            </div><!--Container-xxl-->
+            <!--portfolio-end-->
+ 
         
-
-        <div class="container-fluid my-6 mt-0 py-4" id="norms">
-            <div class="text-center mb-5 text-bg">
-                <h2 class="display-5"><b>NORMATIVAS PARA LAS EVALUACIONES</b> </h2>
-                <h5>Año Escolar 2024-2025</h5>
-            </div>
-            <div class="row" style="">
-                <div class="col-md-4 text-center text-bg">
-                    <p class="text-primary" data-bs-toggle="modal" data-bs-target="#modal1">
-                        <b style="font-size: 1.5em;">MOMENTO</b><br>
-                        <b style="font-size: 7em; color: #3e4095;"><i class="bi bi-1-circle-fill hover-blue hover-click"></i></b>
-                    </p>
-                </div>
-                <div class="col-md-4 text-center text-bg">
-                    <p class="text-primary" data-bs-toggle="modal" data-bs-target="#modal2">
-                        <b style="font-size: 1.5em;">MOMENTO</b><br>
-                        <b style="font-size: 7em; color: #3e4095;"><i class="bi bi-2-circle-fill hover-blue hover-click"></i></b>
-                    </p>
-                </div>
-                <div class="col-md-4 text-center text-bg">
-                    <p class="text-primary" data-bs-toggle="modal" data-bs-target="#modal3">
-                        <b style="font-size: 1.5em;">MOMENTO</b><br>
-                        <b style="font-size: 7em; color: #3e4095"><i class="bi bi-3-circle-fill hover-blue hover-click"></i></b>
-                    </p>
-                </div>
-            </div>
-            <p  style="max-width: 75%; margin: auto;" class="text-bg text-center">
-                <b>Estudia para comprender, no solo para memorizar.</b> Quien entiende lo que aprende, retiene mejor 
-                el conocimiento y desarrolla pensamiento crítico. Además, optimiza su tiempo y mejora su 
-                capacidad de análisis.
-            </p>
-
-        </div>
-
-        <!-- Modal 1 -->
-    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modal1Label">Descargar normativas de evaluaciones - Momento 1</h5>
-                </div>
-                <div class="modal-body">
-                    <a href="views/normas/momento1/1ro.pdf"><i class="bi bi-file-pdf text-primary"></i>PDF 1er año</a> <br>
-                    <a href="views/normas/momento1/2do.pdf"><i class="bi bi-file-pdf text-primary"></i>PDF 2do año</a> <br>
-                    <a href="views/normas/momento1/3ro.pdf"><i class="bi bi-file-pdf text-primary"></i>PDF 3er año</a> <br>
-                    <a href="views/normas/momento1/4to.pdf"><i class="bi bi-file-pdf text-primary"></i>PDF 4to año</a> <br>
-                    <a href="views/normas/momento1/5to.pdf"><i class="bi bi-file-pdf text-primary"></i>PDF 5to año</a>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 2 -->
-    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modal2Label">Descargar normativas de evaluaciones - Momento 2</h5>
-                </div>
-                <div class="modal-body">
-                    <p>No te apresures, aún no llegamos hasta aquí.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 3 -->
-    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modal3Label">Descargar normativas de evaluaciones - Momento 3</h5>
-                </div>
-                <div class="modal-body">
-                    <p>No te apresures, aún no llegamos hasta aquí.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-        
-
-        <!-- Services Start-->
-        <section class="py-4">
-            <div id="books">
-
-            <div class="container py-6 pb-5" data-wow-delay="1s">
-            <div class="text-center">
-                <h2 class="display-5 mb-5 text-bg"><b>LIBROS SUGERIDOS</b> </h2>
-            </div>
-
-            <div class="owl-carousel">
-                <div class="item"><img src="img/l1.jpeg"></div>
-                <div class="item"><img src="img/l2.jpeg"></div>
-                <div class="item"><img src="img/l3.jpeg"></div>
-                <div class="item"><img src="img/l4.jpeg"></div>
-                <div class="item"><img src="img/l5.jpeg"></div>
-                <div class="item"><img src="img/l6.jpeg"></div>
-            </div>
-            <br>
-            <p class="text-center text-primary text-bg">
-                Anímate a investigar por tu cuenta también; descubrir por ti mismo enriquece tus conocimientos y 
-                te da una perspectiva única. La informática y la tecnología avanzan a una velocidad increíble, 
-                y mantenerse actualizado es clave para no quedarse atrás. Explorar nuevas fuentes, profundizar 
-                en temas que te interesen y seguir tu curiosidad te permitirá crecer más allá de lo aprendido
-            </p>
-            <br><br>
-            </div>
-        </div>
-
-
-
-        </section>
-        <!--Services End-->
+<div class="container card shadow-sm border-0 my-5">
+  <div class="card-body">
+    <p class="card-text">
+      Los trabajos presentados en este repositorio fueron elaborados por los estudiantes como parte de las actividades de clase, utilizando <strong>Inkscape</strong>, una herramienta de <em>software libre</em> diseñada para el diseño vectorial. Estos proyectos ya han sido evaluados en función de los criterios establecidos durante el período académico correspondiente.
+    </p>
+    <p class="card-text">
+      Se anima a los estudiantes a seguir explorando sus propuestas gráficas, fomentando así la mejora continua, la experimentación y el desarrollo de su creatividad.
+    </p>
+    <p class="card-text">
+      Si deseas realizar modificaciones en los archivos editables, recuerda <strong>descargar la versión de Inkscape compatible con tu sistema operativo</strong> desde su sitio oficial. Es importante tener en cuenta que, si se utiliza otro software de edición vectorial, la apariencia de los elementos gráficos podría verse alterada debido a diferencias en la interpretación de los vectores.
+    </p>
+     <p class="card-text text-primary">
+      ¡Buen trabajo a todos! <strong>Good job!</strong> 👏
+    </p>
+    <a href="https://inkscape.org" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+      Descargar Inkscape
+    </a>
+  </div>
+</div>
 
         <!-- footer Start -->
         <footer style="margin-top: 10em;">
@@ -337,6 +377,7 @@
               });
             });
             </script>
+
 
 
     
